@@ -1,6 +1,6 @@
 :root {
 --main-bg-color:#6F8792;
---main-color: #C5D2FC;
+--main-color: #dfe5f8;
 --main-border-color:#495E54;
 }
 *{
@@ -59,6 +59,9 @@ content: icon★;
 /*main section*/
 main{
 display: flex;
+align-items: center;
+ padding: 20px;
+ background-color: var(--main-color);
 }
 
 
@@ -83,15 +86,17 @@ grid-template-areas:
 
 .grid-item{
 margin: 10px;
-border: 3px solid var(--main-border-color);
+border: 6px solid var(--main-border-color);
 background-color: var(--main-color);
 }
 
-.sidebar{
+.side {
 font-size: 20px;
 font-weight: 300;
 text-transform: uppercase;
 text-decoration:underline ;
+}
+.sidebar{
 grid-area: sidebar;
 }
 .grid-item-2{
@@ -164,4 +169,5 @@ grid-template-areas:
 .grid-item-10 ul li{
 display: block;
 
+}
 }
