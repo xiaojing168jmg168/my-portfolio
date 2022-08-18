@@ -1,0 +1,137 @@
+:root {
+--main-bg-color:#6F8792;
+--main-color: #C5D2FC;
+--main-border-color:#495E54;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+heml{
+height: 100%;
+}
+/*nav*/
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: var(--main-bg-color);
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 48px;
+}
+.my-photo{
+width: 100px;
+border-radius: 50%;
+
+
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+.menu li::before{
+color:beige;
+content: icon★;
+}
+
+/*main section*/
+main{
+display: flex;
+}
+.grid-item{
+margin: 10px;
+border: 3px solid var(--main-border-color);
+background-color: var(--main-color);
+}
+
+/*grid container*/
+.grid-container{
+margin: 3%;
+display: grid;
+grid-template-columns: 9% 44% 44%;
+grid-auto-rows: minmax(150px, auto);
+grid-row-gap: 3px;
+grid-column-gap: 3px;
+/*or grid-gap: 20px*/
+
+grid-template-areas: 
+"sidebar header header"
+"sidebar1 content content"
+"sidebar1 content1 content2"
+"sidebar1 content3 content4"
+"sidebar2 content5 content5"
+
+}
+
+
+
+.sidebar{
+font-size: 20px;
+font-weight: 300;
+text-transform: uppercase;
+text-decoration:underline ;
+grid-area: sidebar;
+}
+.grid-item-2{
+grid-area:header;
+}
+.sidebar1{
+grid-area:sidebar1;
+}
+.grid-item-4{
+grid-area:content;
+}
+
+.grid-item-5{
+grid-area:content1;
+}
+.grid-item-6{
+grid-area:content2;
+}
+
+.grid-item-7{
+grid-area:content3;
+}
+.grid-item-8{
+grid-area:content4;
+}
+.sidebar2{
+grid-area:sidebar2;
+}
+.grid-item-10{
+grid-area:content5;
+}
+
+
+footer{
+background-color: var(--main-bg-color);
+padding: 10px;
+display: flex;
+text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
