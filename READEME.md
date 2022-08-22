@@ -15,3 +15,4 @@ My first image of application is larger in size than the others.
 When they click on the images of the applications, Then take them to that deployed application.
 
 when they resize the page or view the site on various screens and devices. Then my site is presented with a responsive layout that adapts to their viewport.
+link: https://xiaojing168jmg168.github.io/my-portfolio/
