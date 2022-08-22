@@ -229,8 +229,8 @@ border-right: 6px solid var(--main-border-color)
 grid-column-gap: 2px;
 }
 .side {
-font-size: 100%;
-font-weight:300;
+font-size: 80%;
+font-weight:500;
 text-decoration: underline ;
 border-right: 6px solid var(--main-border-color)
 }
