@@ -107,6 +107,7 @@ grid-template-areas:
 position: relative;
 margin: 10px;
 background-color: var(--main-color);
+margin-bottom: 15px;
 }
 .img-title{
 position: absolute;
@@ -116,26 +117,28 @@ background-color: var(--main-dark);
 padding: 5px 5px;
 top: 10px;
 left: 0px;
-opacity:1;
+
 }
 
 .gird-img{
 width: 100%;
-margin-bottom: 15px;
 background-size: cover;
 background-position: center;
-opacity: 0.5;
+opacity: 0.8;
 border: 3px solid var(--main-bg-color);
 }
 
 .gird-img:hover{
-opacity: 0.9;
+opacity: 1;
 }
 
 .grid-item-4{
  height: 300px;
  background-image: url("../images/img-4.jpg");
  grid-area:content;
+}
+.grid-item-4:hover{
+ opacity:0.9;
 }
 
 .grid-item-5{
